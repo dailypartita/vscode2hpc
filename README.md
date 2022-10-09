@@ -1,7 +1,7 @@
 ## 如何用vscode连接到华大的HPC超算集群
 
 - 面向对象：
-	在华大基因联合培养的搞生信的同学
+	HPC无法正常联网的用户
 
 - 为什么用vscode，而不是putty、mobaxterm等终端：
 	1. vscode可以直接在集群上可视化多种特殊文件，如PDF，xlsx，csv，markdown...
