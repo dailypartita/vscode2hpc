@@ -1,25 +1,21 @@
-## 如何用vscode连接到华大的HPC超算集群
+## How to use vscode to connect to BGI's HPC supercomputing cluster
 
-- 面向对象：
-	HPC无法正常联网的用户
+- Object Oriented:
+Users whose HPC cannot connect to the Internet normally
 
-- 为什么用vscode，而不是putty、mobaxterm等终端：
-	1. vscode可以直接在集群上可视化多种特殊文件，如PDF，xlsx，csv，markdown...
-	2. vscode可以直接在集群上调试python、R代码
-	3. vscode可以用常规IDE的书写方式代替VIM，还能自动补全
-	......
+- Why use vscode instead of putty, mobaxterm and other terminals:
+1. vscode can visualize a variety of special files directly on the cluster, such as PDF, xlsx, csv, markdown...
+2. vscode can debug python and R code directly on the cluster
+3. vscode can replace VIM with the writing method of conventional IDE, and can also automatically complete
+......
 
-- vscode本地配置：
-	1. 下载，安装vscode
-	2. 安装remote-SSH、简体中文拓展包
+- vscode local configuration:
+1. Download and install vscode
+2. Install remote-SSH, Simplified Chinese expansion package
 
-- vscode集群配置：
-	1. 本地下载对应版本的vscode-server：由于集群的登陆节点无法联网，所以需要手动下载vscode-server。连接：https://update.code.visualstudio.com/commit:${commit_id}/server-linux-x64/stable
-	2. 上传vscode-server到集群，解压，重命名，在常用的软件目录下创建.vscode-swever/bin目录，把刚才重命名后的目录放到bin目录下，在home目录下创建.vscode-server目录的软链接
-	3. 打开vscode的远程资源管理器，配置登陆节点，用户名，输入密码、验证码连接到集群
-	4. 下载常用拓展包：vscode-pdf、R拓展、python拓展、office拓展、markdown拓展
-	5. 关闭vscode自动更新功能，防止由于vscode版本更新导致需要重新上传vscode-server
-
-
-
-
+- vscode cluster configuration:
+1. Download the corresponding version of vscode-server locally: Since the login node of the cluster cannot be connected to the Internet, you need to download vscode-server manually. Connection: https://update.code.visualstudio.com/commit:${commit_id}/server-linux-x64/stable
+2. Upload vscode-server to the cluster, decompress it, rename it, create the .vscode-swever/bin directory in the commonly used software directory, put the renamed directory in the bin directory, and create .vscode- in the home directory Soft link to the server directory
+3. Open the remote resource manager of vscode, configure the login node, user name, enter the password and verification code to connect to the cluster
+4. Download common extension packages: vscode-pdf, R extension, python extension, office extension, markdown extension
+5. Turn off the vscode automatic update function to prevent the need to re-upload vscode-server due to the vscode version update
